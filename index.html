@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Pet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/global.css">
+</head>
+  
+<body>
+  <div class="logo"><img src="./assets/logo.svg" alt=""></div>
+  
+  <h1>Sua agenda</h1>
+
+  <p>
+    Aqui você pode ver todos os clientes e serviços agendados para hoje.
+  </p>
+
+  <input type="date">
+
+  <div class="content">
+    <section class="schedule-period">
+      <header>
+        <img src="./assets/sunrise.svg" alt="">
+        <b>Manhã</b>
+        <b>09h-12h</b>
+      </header>
+      <hr>
+      <ul id="period-morning" class="period">
+        <li>
+          <strong>09:00</strong>
+          <span><strong>Thor</strong> / Fernando Costa</span>
+          <span>Vacinação</span>
+          <button class="cancel">Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="schedule-period">
+      <header>
+        <img src="./assets/cloud.svg" alt="">
+        <b>Tarde</b>
+        <b>13h-18h</b>
+      </header>
+      <hr>
+      <ul id="period-afternoon" class="period">
+        <li>
+          <strong>13:00</strong>
+          <span><strong>Mel</strong> / João Souza</span>
+          <span>Corte de Unhas</span>
+          <button class="cancel">Remover agendamento</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="schedule-period">
+      <header>
+        <img src="./assets/night.svg" alt="">
+        <b>Noite</b>
+        <b>19h-21h</b>
+      </header>
+      <hr>
+      <ul id="period-night" class="period">
+        <li>
+          <strong>20:00</strong>
+          <span><strong>Max</strong> / Camila Santos</span>
+          <span>Limpeza de Dentes</span>
+          <button class="cancel">Remover agendamento</button>
+        </li>
+        
+      </ul>
+    </section>
+  </div>
+
+  <div class="box">
+    <button class="open-modal">NOVO AGENDAMENTO</button>
+  </div>
+
+  <form class="modal">
+    <h1>Agende um atendimento</h1>
+    <span>Preencha os dados do cliente para realizar o agendamento:</span>
+    <div class="input-info">
+      <label for="name">Nome do tutor</label>
+      <img src="./assets/contacts.svg" alt="">
+      <input type="text" name="name" id="name" placeholder="Helena Souza">
+    </div>
+
+    <div class="input-info">
+      <label for="pet-name">Nome do pet</label>
+      <img src="./assets/animal.svg" alt="">
+      <input type="text" name="pet-name" id="pet-name" placeholder="Cheddar">
+    </div>
+    
+    <div class="input-info">
+      <label for="telephone">Telefone</label>
+      <img src="./assets/telephone.svg" alt="">
+      <input type="text" id="telephone" placeholder="(00) 0 0000-0000" maxlength="16">
+    </div>
+
+    <div class="input-info">
+      <label for="description">Descrição do serviço</label>
+      <textarea placeholder="Banho e tosa" id="description"></textarea>
+    </div>
+
+    <div class="date-hour">
+      <div class="input-info">
+        <label for="date">Data</label>
+        <img src="./assets/calendar.svg" alt="">
+        <input type="date" name="date" id="date">
+      </div>
+
+      <div class="input-info">
+        <label for="hour">Hora</label>
+        <img src="./assets/clock.svg" alt="">
+        <input type="text" name="hour" id="hour" placeholder="00:00">
+      </div>
+    </div>
+    
+    <button type="submit" class="schedule">AGENDAR</button>
+  </form>
+  <dialog>
+
+  </dialog>
+</body>
+</html>
