@@ -35,11 +35,12 @@
         <b>Manhã</b>
         <b>09h-12h</b>
       </header>
-      <hr>
       <ul id="period-morning" class="period">
         <li>
-          <strong>09:00</strong>
-          <span><strong>Thor</strong> / Fernando Costa</span>
+          <div class="when">
+            <strong>09:00</strong>
+            <span><strong>Thor</strong> / Fernando Costa</span>
+          </div>
           <span>Vacinação</span>
           <button class="cancel">Remover agendamento</button>
         </li>
@@ -52,11 +53,12 @@
         <b>Tarde</b>
         <b>13h-18h</b>
       </header>
-      <hr>
       <ul id="period-afternoon" class="period">
         <li>
-          <strong>13:00</strong>
-          <span><strong>Mel</strong> / João Souza</span>
+          <div class="when">
+            <strong>13:00</strong>
+            <span><strong>Mel</strong> / João Souza</span>
+          </div>          
           <span>Corte de Unhas</span>
           <button class="cancel">Remover agendamento</button>
         </li>
@@ -69,24 +71,25 @@
         <b>Noite</b>
         <b>19h-21h</b>
       </header>
-      <hr>
       <ul id="period-night" class="period">
         <li>
-          <strong>20:00</strong>
-          <span><strong>Max</strong> / Camila Santos</span>
+          <div class="when">
+            <strong>20:00</strong>
+            <span><strong>Max</strong> / Camila Santos</span>
+          </div>         
           <span>Limpeza de Dentes</span>
           <button class="cancel">Remover agendamento</button>
         </li>
-        
       </ul>
     </section>
   </div>
 
   <div class="modal-button">
     <button class="open-modal">NOVO AGENDAMENTO</button>
-  </div>
+  </div>  
 
-  <form class="modal">
+  <dialog>
+    <form class="modal">
     <h1>Agende um atendimento</h1>
     <span>Preencha os dados do cliente para realizar o agendamento:</span>
     <div class="input-info">
@@ -131,8 +134,6 @@
     
     <button type="submit" class="schedule">AGENDAR</button>
   </form>
-
-  <dialog>
   </dialog>
 </body>
 </html>
