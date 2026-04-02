@@ -1,0 +1,22 @@
+.modal-button{
+  padding: 18px 20px;
+  background-color: var(--background-tertiary);
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 44px;
+}
+
+ .schedule {
+  display: block  ;
+  margin-inline: auto;
+  padding: 12px 24px;
+  background-color: var(--content-brand);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.schedule:hover{
+  background-color: var(--background-highlights);
+}

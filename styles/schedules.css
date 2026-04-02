@@ -50,3 +50,37 @@
 .border-bot{
   border-bottom: 1px solid rgb(102, 102, 102, 0.3);
 }
+
+@media (width >= 80em) {
+  .content{
+    max-width: 711px;
+    margin-inline: auto;
+  }
+
+  .schedule-period ul{
+  padding-top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+  .schedule-period ul li .cancel {
+    position: relative;
+    bottom: 0;
+  }
+
+  .schedule-period ul li{
+    display: flex;
+    gap: 16px;
+    padding: 16px 12px;
+  }
+
+  .schedule-period ul li span{
+   margin-right: auto;
+  }
+
+  .schedule-period ul li .when{
+   margin-right: auto;
+  }
+}
