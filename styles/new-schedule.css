@@ -7,12 +7,15 @@
 }
 
  .schedule {
-  display: block  ;
+  display: block;
   margin-inline: auto;
   padding: 12px 24px;
   background-color: var(--content-brand);
   border-radius: 8px;
   transition: background-color 0.2s ease;
+}
+
+.modal-button .schedule{
   box-shadow: 0 0 40px 0 rgb(146, 130, 250, 30%);
 }
 

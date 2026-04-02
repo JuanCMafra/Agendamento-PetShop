@@ -1,0 +1,138 @@
+dialog::backdrop {
+  background-color: rgb(0 0 0 /.3);
+  backdrop-filter: blur(1px);
+}
+
+body dialog {
+  border: none;
+  box-shadow: 0 0 2em rgb(0 0 0 /.9);
+  border-radius: 12px;
+  background-color: var(--background-tertiary);  
+}
+
+form h1 {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+dialog form {
+  padding: 40px;
+  background-color: var(--background-tertiary);
+}
+
+dialog form .input-info img:first-of-type{
+  height: auto;
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(20%);
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+}
+
+dialog form .info {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+dialog form .input-info{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+dialog form .input-info input[type="text"], select{
+  padding: 12px  12px  12px 40px;
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  width: 100%;
+}
+
+textarea{
+  padding: 12px;
+  background-color: var(--background-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  width: 100%;
+}
+
+input[type="text"]:hover, textarea:hover, select:hover, input[type="date"]:hover {
+  cursor: pointer;
+  border-color: var(--border-secondary) !important;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus, input[type="date"]:focus {
+  outline: .1rem solid var(--border-brand) !important;
+}
+
+dialog form .date-hour{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+dialog form .date-hour .date input[type="date"]{
+  background-color: var(--background-tertiary);
+  border-color: var(--border-primary);
+  width: 100%;
+  height: 100%;
+}
+
+dialog form .date-hour .date{
+  background-color: var(--background-tertiary);
+  border-color: var(--border-primary);
+  width: 100%;
+  min-width: 190px;
+}
+
+dialog form .date-hour .date img:first-of-type{
+  transform: translateY(-50%) !important;
+}
+
+dialog form .schedule {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+dialog form .date-hour select {
+  appearance: none;
+  padding: 12px 12px 12px 40px;
+  font: 500 16px/150% 'Inter', sans-serif;
+  color: var(--content-secondary);
+  position: relative;
+}
+
+.arrow-hour {
+  position: absolute; 
+  transform: translateY(25%) ;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  right: 12px !important; 
+  top: 50%;
+}
+
+@media (width >= 80em) {
+
+  body dialog{
+    min-width: 477px;
+  }
+
+  dialog form .date-hour{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .date-hour .input-info {
+  flex: 1;
+}
+  
+}
