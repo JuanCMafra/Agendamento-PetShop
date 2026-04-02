@@ -3,8 +3,6 @@
   background-color: var(--background-tertiary);
   position: sticky;
   bottom: 0;
-  left: 0;
-  right: 0;
   margin-top: 44px;
 }
 
@@ -15,8 +13,27 @@
   background-color: var(--content-brand);
   border-radius: 8px;
   transition: background-color 0.2s ease;
+  box-shadow: 0 0 40px 0 rgb(146, 130, 250, 30%);
 }
 
 .schedule:hover{
   background-color: var(--background-highlights);
+}
+
+@media (width >= 80em) {
+  .main-body{
+    position: relative;
+    max-width: 711px;
+    margin-inline: auto;
+  }
+  .modal-button{
+    background-color: #14151D;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    margin: 0 auto;
+    width: max-content;
+    bottom: -30px;
+    right: -250px;
+  }
 }
