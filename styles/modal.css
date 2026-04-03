@@ -117,6 +117,7 @@ dialog form .date-hour select {
   height: 20px;
   right: 12px !important; 
   top: 50%;
+  pointer-events: none;
 }
 
 @media (width >= 80em) {
