@@ -90,6 +90,8 @@ dialog form .date-hour .date{
   border-color: var(--border-primary);
   width: 100%;
   min-width: 190px;
+  height: 48px;
+  position: relative;
 }
 
 dialog form .date-hour .date img:first-of-type{

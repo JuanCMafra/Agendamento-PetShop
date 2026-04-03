@@ -13,4 +13,5 @@ import "./styles/schedules.css"
 //JS
 import "./modules/open-modal.js"
 import "./modules/form/submit.js"
+import "./modules/page-load.js"
 

@@ -23,10 +23,10 @@
   padding-bottom: 12px;
 }
 
-.date{
+.header .date{
   position: relative;
-  width: 183px;
-  height: 48px;  
+  max-width: 183px;
+  height: 48px;
 }
 
 input[type="date"]{
