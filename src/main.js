@@ -1,0 +1,15 @@
+"use strict"
+
+// Configuração do dayjs
+import "./libs/dayjs.js"
+
+//CSS
+import "./styles/global.css"
+import "./styles/header.css"
+import "./styles/modal.css"
+import "./styles/new-schedule.css"
+import "./styles/schedules.css"
+
+//JS
+import "./open-modal.js"
+
