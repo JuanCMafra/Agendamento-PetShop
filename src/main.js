@@ -11,5 +11,6 @@ import "./styles/new-schedule.css"
 import "./styles/schedules.css"
 
 //JS
-import "./open-modal.js"
+import "./modules/open-modal.js"
+import "./modules/form/submit.js"
 
