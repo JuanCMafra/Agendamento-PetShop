@@ -1,4 +1,4 @@
-import dayjs from "dayjs";
+import dayjs from "dayjs"
 import { openingHours } from "../../utils/open-hours";
 
 const hours = document.getElementById("schedule-hour")
