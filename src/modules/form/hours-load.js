@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import { openingHours } from "../../utils/open-hours";
 
-const hours = document.getElementById("hour")
+const hours = document.getElementById("schedule-hour")
 
 export function hoursLoad({ date }) {
   const opening = openingHours.map((hour) => {
@@ -19,6 +19,7 @@ export function hoursLoad({ date }) {
 
     if (available === true) {
       const option = document.createElement("option")
+      option.value = hour
       option.textContent = hour
 
       hours.append(option)
