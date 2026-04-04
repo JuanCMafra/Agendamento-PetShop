@@ -4,6 +4,14 @@ import { openingHours } from "../../utils/open-hours";
 const hours = document.getElementById("schedule-hour")
 
 export function hoursLoad({ date }) {
+  hours.innerHTML = ""
+  const optionEmpty = document.createElement("option")
+  optionEmpty.disabled = true
+  optionEmpty.selected = true
+  optionEmpty.innerText = "--Selecione--"
+  hours.append(optionEmpty)
+
+
   const opening = openingHours.map((hour) => {
     const [scheduleHour] = hour.split(":")
 
