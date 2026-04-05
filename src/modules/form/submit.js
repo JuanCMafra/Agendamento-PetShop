@@ -1,6 +1,8 @@
 import dayjs from "dayjs"
 import { scheduleNew } from "../../services/schedule-new.js"
+import { schedulesDay, schedulesDayBody } from "../schedules/load.js"
 
+const dialog = document.querySelector("dialog")
 const form = document.querySelector("form")
 const clientName = document.getElementById("name")
 const petName = document.getElementById("pet-name")
@@ -63,8 +65,17 @@ form.onsubmit = async (event) => {
       description,
       when,
     })
+    
+    dialog.close()
+
+    schedulesDayBody()
+    clientName.value = ""
+    petName.value = ""
+    telephoneClient.value = ""
+    descriptionSchedule.value = ""    
+
   } catch (error) {
-    alert("Não foi possível realizar os agendamentos")
+    alert("Não foi possível realizar o agendamento")
     console.log(error)
   }
 }

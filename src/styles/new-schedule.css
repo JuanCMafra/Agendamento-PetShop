@@ -1,11 +1,10 @@
 .modal-button{
   padding: 18px 20px;
   background-color: var(--background-tertiary);
-  position: fixed;
+  position: fixed;;
   bottom: 0;
   left: 0;
   right: 0;
-  margin-top: 44px;
 }
 
  .schedule {
@@ -39,6 +38,6 @@
     margin: 0 auto;
     width: max-content;
     bottom: -30px;
-    right: -250px;
+    left: 750px;
   }
 }

@@ -1,6 +1,7 @@
 .content{
   margin-top: 32px;
   margin-inline: 20px;
+  margin-bottom: 100px;
   display: grid;
   gap: 12px;
   position: relative;

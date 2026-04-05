@@ -1,5 +1,5 @@
 import { hoursLoad } from "../form/hours-load";
-import { scheduleFetchByDay } from "../../services/schedule-fetch-by-day"
+import { scheduleFetchByDayModal, scheduleFetchByDayBody } from "../../services/schedule-fetch-by-day"
 import { scheduleShow } from "./show.js";
 
 const selectedModalDate = document.getElementById("modal-date")
@@ -7,11 +7,16 @@ const selectedBodyDate = document.getElementById("body-date")
 
 export async function schedulesDay(){
   const date = selectedModalDate.value
+
+  const dailySchedulesModal = await scheduleFetchByDayModal({ date })
+  
+  hoursLoad({ date, dailySchedulesModal })
+}
+
+export async function schedulesDayBody () {
   const bodyDate = selectedBodyDate.value
 
-  const dailySchedules = await scheduleFetchByDay({ bodyDate })
+  const dailySchedulesBody = await scheduleFetchByDayBody({ bodyDate })
 
-  scheduleShow({ dailySchedules })
-  
-  hoursLoad({ date, dailySchedules })
+  scheduleShow({ dailySchedulesBody })
 }

@@ -3,10 +3,10 @@ import { openingHours } from "../../utils/open-hours";
 
 const hours = document.getElementById("schedule-hour")
 
-export function hoursLoad({ date, dailySchedules }) {
+export function hoursLoad({ date, dailySchedulesModal }) {
   hours.innerHTML = ""
 
-  const unavailableHours = dailySchedules.map((schedules) => dayjs(schedules.when).format("HH:00"))
+  const unavailableHours = dailySchedulesModal.map((schedules) => dayjs(schedules.when).format("HH:mm"))
 
   const optionEmpty = document.createElement("option")
   optionEmpty.disabled = true
@@ -24,7 +24,7 @@ export function hoursLoad({ date, dailySchedules }) {
 
    return {
       hour,
-      available,
+      available
     }
   })
 

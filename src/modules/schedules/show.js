@@ -4,13 +4,13 @@ const periodMorning = document.getElementById("period-morning")
 const periodAfternoon = document.getElementById("period-afternoon")
 const periodNight = document.getElementById("period-night")
 
-export function scheduleShow({ dailySchedules }) {
+export function scheduleShow({ dailySchedulesBody }) {
   try {
     periodMorning.innerHTML = ""
     periodAfternoon.innerHTML = ""
     periodNight.innerHTML = ""
 
-    dailySchedules.forEach((schedule) => {
+    dailySchedulesBody.forEach((schedule) => {
       const item = document.createElement("li")
       const when = document.createElement("div")
       const time = document.createElement("strong")
