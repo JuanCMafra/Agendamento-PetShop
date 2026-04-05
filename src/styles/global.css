@@ -88,7 +88,8 @@ strong{
   font: var(--label-small);
 }
 
-span{
+span, pre{
+  margin: 0;
   font: var(--paragraph-small);
   color: var(--content-secondary);
 }
