@@ -67,12 +67,12 @@ form.onsubmit = async (event) => {
     })
     
     dialog.close()
-
-    schedulesDayBody()
     clientName.value = ""
     petName.value = ""
     telephoneClient.value = ""
-    descriptionSchedule.value = ""    
+    descriptionSchedule.value = ""
+    selectedDateBody.value = selectedDateModal.value
+    schedulesDayBody()
 
   } catch (error) {
     alert("Não foi possível realizar o agendamento")
