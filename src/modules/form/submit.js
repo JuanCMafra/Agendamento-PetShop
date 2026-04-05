@@ -1,6 +1,6 @@
 import dayjs from "dayjs"
 import { scheduleNew } from "../../services/schedule-new.js"
-import { schedulesDay, schedulesDayBody } from "../schedules/load.js"
+import { schedulesDayBody } from "../schedules/load.js"
 
 const dialog = document.querySelector("dialog")
 const form = document.querySelector("form")
@@ -55,7 +55,7 @@ form.onsubmit = async (event) => {
 
     const when = dayjs(selectedDateModal.value).add(hour, "hour")
 
-    const id = new Date().getTime()
+    const id = String(new Date().getTime())
 
     await scheduleNew({
       id,
@@ -64,7 +64,8 @@ form.onsubmit = async (event) => {
       telephone,
       description,
       when,
-    })
+    }) 
+    console.log("Criando agendamento com ID:", id)
     
     dialog.close()
     clientName.value = ""

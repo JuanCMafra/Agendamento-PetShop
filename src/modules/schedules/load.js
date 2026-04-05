@@ -1,5 +1,5 @@
 import { hoursLoad } from "../form/hours-load";
-import { scheduleFetchByDayModal, scheduleFetchByDayBody } from "../../services/schedule-fetch-by-day"
+import { scheduleFetchByDayModal, scheduleFetchByDayBody } from "../../services/schedule-fetch-by-day.js"
 import { scheduleShow } from "./show.js";
 
 const selectedModalDate = document.getElementById("modal-date")
