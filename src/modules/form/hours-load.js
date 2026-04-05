@@ -1,5 +1,5 @@
 import dayjs from "dayjs"
-import { openingHours } from "../../utils/open-hours";
+import { openingHours } from "../../utils/open-hours.js";
 
 const hours = document.getElementById("schedule-hour")
 
@@ -24,7 +24,7 @@ export function hoursLoad({ date, dailySchedulesModal }) {
 
    return {
       hour,
-      available
+      available,
     }
   })
 
