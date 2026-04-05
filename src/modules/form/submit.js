@@ -36,7 +36,7 @@ form.onsubmit = async (event) => {
     //Telefone
     const telephone = telephoneClient.value.trim()
     if (!telephone) {
-      return alert("Informe o telefone!")
+      return alert("Informe um telefone!")
     }
 
     //Descrição
