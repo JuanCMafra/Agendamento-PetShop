@@ -6,10 +6,13 @@
     "build": "webpack",
     "dev": "webpack serve",
     "server": "json-server server.json --watch --port 3333",
-    "start": "json-server --watch server.json --port $PORT",
-    "start:server": "node server.js"
+    "start": "node server.js",
+    "start:server": "node server.js",
+    "postinstall": "npm ls json-server >/dev/null 2>&1 || npm install json-server"
   },
-  "postinstall": "npm ls json-server >/dev/null 2>&1 || npm install json-server",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "dayjs": "^1.11.10",
     "json-server": "^1.0.0-alpha.21"
