@@ -6,7 +6,8 @@
     "build": "webpack",
     "dev": "webpack serve",
     "server": "json-server server.json --watch --port 3333",
-    "start": "node dist/main.js"
+    "start": "json-server --watch server.json --port $PORT",
+    "start:server": "node server.js"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
